@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
+import Title from './Title';
 
 class SolarSystem extends Component {
   render() {
+    const title = 'Planetas';
     return (
       <div data-testid="solar-system">
-        <p>Teste</p>
+        <Title headline={ title } />
       </div>
     );
   }

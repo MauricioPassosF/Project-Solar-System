@@ -7,11 +7,13 @@ class SolarSystem extends Component {
   render() {
     const title = 'Planetas';
     return (
-      <div data-testid="solar-system">
+      <div data-testid="solar-system" className="solar-system container-column">
         <Title headline={ title } />
-        {Planets.map(({ name, image }) => (
-          <PlanetCard key={ name } planetImage={ image } planetName={ name } />
-        ))}
+        <section className="planets container-row">
+          {Planets.map(({ name, image }) => (
+            <PlanetCard key={ name } planetImage={ image } planetName={ name } />
+          ))}
+        </section>
       </div>
     );
   }
